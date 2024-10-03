@@ -1,0 +1,14 @@
+npx create-react-app cinetag
+
+npm start
+
+-------------------------------
+
+Figma
+
+https://www.figma.com/community/file/1410405144691439781/react-praticando-react-com-js-cinetag
+
+--------------------------------
+
+npm install react-router-dom
+

@@ -1,0 +1,26 @@
+CSS com módulos
+
+Durante a criação dos arquivos do projeto você se deparou com arquivos com nome como CabecalhoLink.module.css e Cabecalho.module.css. 
+Mas o que quer dizer esse module?
+
+Um módulo CSS é um arquivo CSS no qual todos os nomes de classe têm escopo local por padrão. 
+Dessa maneira, você pode reutilizar nomes de classes em arquivos diferentes sem acontecer conflitos. 
+Por exemplo: eu posso usar a classe container em vários componentes e pra cada container ter um estilo diferente.
+
+O React por padrão suporta esse tipo de CSS sem precisar instalar, utilizando o padrão para nome de arquivos [nome].module.css. 
+Agora, imagine que queremos trocar a cor de um botão de confirmação para verde, você irá dentro do arquivo Botao.module.css e 
+definir a cor como verde:
+
+.confirmar {
+    background-color: green
+}
+
+Aí no arquivo que tem o botão, você vai precisar importar o arquivo CSS já dando um nome pra ele:
+
+import styles from “./Botao.module.css”
+
+Depois, para utilizar esses estilos você vai seguir o padrão styles.[nomeDaClasse], dessa maneira:
+
+<button className={styles.confirmar}>
+
+Bacana né? Assim temos um problema a menos para se preocupar, a confusão com o CSS.
