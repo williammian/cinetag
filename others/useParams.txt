@@ -1,0 +1,15 @@
+useParams
+
+O hook useParams é um hook da biblioteca react-router-dom, e segundo sua documentação (https://reactrouter.com/en/main/hooks/use-params), 
+ele retorna um objeto de valores/chaves que foram passados como parâmetros dinâmicos da URL atual. Para usá-lo, inicialmente, 
+precisamos construir uma rota:
+
+<Route path="videos/:id/" element={<Player />} />
+
+No exemplo acima, o parâmetro enviado é o id, que é uma rota reservada por causa do : na frente. Com o parâmetro dentro da URL, 
+o roteador React não corresponderá literalmente à rota acima. Agora, corresponderá dinamicamente a páginas com o padrão “videos/:id”, 
+sendo o id o valor que você quiser inserir, como: “videos/1”.
+
+Para imprimir o conteúdo da página basta realizar a validação de captar esse valor de id e comparar com o que deve ser mostrado. 
+No projeto CineTag recolhemos o id da URL através do hook useParams e pedimos para imprimir as informações referentes ao vídeo 
+que possui aquele id.
