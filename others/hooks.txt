@@ -1,0 +1,21 @@
+O que é um Hook?
+
+Um Hook (em português, gancho) é uma função especial que te permite utilizar recursos do React. 
+Você pode detectar um hook pelo início de seu nome, em que aparece o termo use.
+
+Por exemplo, o useState é um Hook que te permite adicionar um estado a um componente de função. 
+Esse hook é inicializado com duas variáveis: a primeira, que é o valor atual do estado, e a segunda que atualiza o valor.
+
+Note a estrutura de declaração de uma variável de estado utilizando o useState:
+
+const [favoritos, setFavoritos] = useState([]);
+
+Os nomes que estão entre colchetes não fazem parte do React. 
+Você pode nomear suas próprias variáveis de acordo com o propósito dela.
+
+Esta sintaxe com colchetes é chamada de “atribuição via desestruturação”. 
+Com isso, estamos criando duas variáveis ao mesmo tempo, a favoritos e a setFavoritos., 
+onde favoritos é definido para o primeiro valor retornado por useState, e setFavoritos é o segundo.
+
+Quando declaramos uma variável com useState, ela retorna um par — um array com dois itens. 
+Com a desestruturação, conseguimos atribuir esses itens simultaneamente para as variáveis que criamos.
