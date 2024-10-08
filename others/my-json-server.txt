@@ -1,0 +1,62 @@
+My Json Server
+
+1- Criar um arquivo Json chamado db.json com array de objetos. Ex:
+
+{
+    "videos": [
+        {
+            "id": 1,
+            "titulo": "O labirinto do Logcat",
+            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img2.png",
+            "link": "https://www.youtube.com/embed/ypvGqZGJBls"
+        },
+        {
+            "id": 2,
+            "titulo": "Um componente no espaço",
+            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img1.png",
+            "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ"
+        },
+        {
+            "id": 3,
+            "titulo": "O poderoso JavaScript",
+            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img4.png",
+            "link": "https://www.youtube.com/embed/N1BSG02z-Mw"
+        },
+        {
+            "id": 4,
+            "titulo": "Dart, o Caçador de Andróides",
+            "capa": "https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img3.png",
+            "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+        }
+    ]
+}
+
+----------------------------------
+
+2- No GitHub criar um projeto e colocar o arquivo na raiz do mesmo. Ex:
+
+https://github.com/MonicaHillman/cinetag-api
+
+-----------------------------------
+
+3- Ir ao site My Json Server (https://my-json-server.typicode.com/).
+Na página inicial, temos a informação de que o site cria uma API fake online ("Get instantly a fake server") e um tutorial de como usar.
+
+O tutorial contém os seguintes passos:
+a- Create a repository on GitHub (<your-username>/<your-repo>)
+b- Create a db.json file ("Criar um arquivo db.json)
+c- Visit "https://my-json-server.typicode.com/your-username/your-repo" to access your server
+
+Ex:
+
+https://my-json-server.typicode.com/monicahillman/cinetag-api/videos
+
+https://my-json-server.typicode.com/monicahillman/cinetag-api/videos/1
+
+-----------------------------------
+
+Nessa página, são exibidos os recursos disponíveis: o nosso array chamado "videos" e o db.json. Ao clicar em db.json, 
+será aberta uma URL contendo todas as informações que antes estavam no arquivo db.json do nosso projeto.
+
+Na mesma página, também temos a informação de que podemos usar as requisições GET, POST, PUT, PATCH e DELETE. 
+Além disso, o site nos diz que as alterações não são persistentes entre as chamadas ("Changes aren't persisted between calls").

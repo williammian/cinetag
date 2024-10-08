@@ -1,0 +1,13 @@
+Deploy Vercel
+
+Primeiramente, acesse o site da Vercel (https://vercel.com/) e faça o login com o GitHub. 
+Será aberta uma aba de autenticação; uma vez autenticados, estaremos logados na nossa conta.
+
+Em seguida, vamos até "Add New > Project". O botão está localizado à direita na barra superior.
+
+Feito isso, o site irá perguntar se queremos importar um repositório Git ("Import Git Repository"). 
+Nesse caso, nós queremos e vamos continuar com o GitHub, pois é onde está o nosso projeto.
+
+Será aberta uma lista dos repositórios do GitHub, a partir da qual vamos importar o "cinetag". 
+Antes da importação, é aberta uma janela contendo o nome do projeto e a informação detectada de que ele foi criado com o Create React App. 
+Para finalizar, clicamos no botão "Deploy".
